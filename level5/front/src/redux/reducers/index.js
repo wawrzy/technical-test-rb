@@ -1,3 +1,9 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({});
+import { workers } from './workers';
+import { shifts } from './shifts';
+
+export default combineReducers({
+  workers,
+  shifts,
+});

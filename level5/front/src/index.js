@@ -1,18 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/integration/react'
+import { PersistGate } from 'redux-persist/integration/react';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+
+import theme from 'Custom/theme';
+import App from 'Scopes/App/App';
+import { store, persistor } from 'Redux/store';
 
 import './index.css';
 
-import App from './scopes/App/App';
 import * as serviceWorker from './serviceWorker';
-import { store, persistor } from './redux/store';
 
 const RootComponent = () => (
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-      <App />
+      <MuiThemeProvider theme={theme}>
+        <App />
+      </MuiThemeProvider>
     </PersistGate>
   </Provider>
 );

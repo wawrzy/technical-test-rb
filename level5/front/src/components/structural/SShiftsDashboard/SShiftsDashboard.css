@@ -1,0 +1,26 @@
+.container {
+  width: 65vw;
+  height: 48vh;
+  justify-content: center;
+  background: #d4ecef;
+  display: flex;
+  position: relative;
+}
+
+.header {
+  width: 50vw;
+  height: 76px;
+  top: -30px;
+  position: absolute;
+  background: #95bac3;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.table {
+  width: 100%;
+  margin-top: 100px;
+  overflow-y: auto;
+}

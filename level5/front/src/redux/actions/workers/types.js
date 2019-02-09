@@ -1,0 +1,3 @@
+export const EDIT_WORKER = 'EDIT_WORKER';
+export const CREATE_WORKER = 'CREATE_WORKER';
+export const REMOVE_WORKER = 'REMOVE_WORKER';

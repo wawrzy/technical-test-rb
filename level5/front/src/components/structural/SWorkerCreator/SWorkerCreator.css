@@ -1,0 +1,9 @@
+.fab {
+  position: absolute !important;
+  bottom: 40px;
+  right: 40px;
+}
+
+.form {
+  flex-direction: column;
+}
